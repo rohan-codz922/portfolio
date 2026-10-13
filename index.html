@@ -92,7 +92,7 @@
     font-size:17px; color:var(--mute); max-width:540px; margin:0 0 30px;
   }
   .hero p.lede b{color:var(--ink); font-weight:600;}
-  .cta-row{display:flex; gap:12px; margin-bottom:54px;}
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:54px;}
   .btn{
     font-family:'IBM Plex Mono', monospace; font-size:13px; letter-spacing:0.03em;
     padding:13px 22px; border-radius:6px; border:1px solid var(--ink);
@@ -187,6 +187,8 @@
     margin:18px 0 22px; text-transform:uppercase;
   }
   .chips{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px;}
+  .case-link{font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:0.02em; color:var(--signal); display:inline-block;}
+  .case-link:hover{text-decoration:underline;}
   .chip{
     font-family:'IBM Plex Mono', monospace; font-size:11.5px;
     border:1px solid var(--line); border-radius:5px; padding:5px 10px;
@@ -246,7 +248,7 @@
   /* ---------- contact / footer ---------- */
   footer{padding:56px 0 80px;}
   .contact-grid{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
     border-top:1px solid var(--line); border-bottom:1px solid var(--line);
     padding:26px 0; margin:30px 0;
   }
@@ -309,6 +311,7 @@
         <div class="cta-row">
           <a class="btn btn-solid" href="mailto:rohanmishra2823@gmail.com">Email Me</a>
           <a class="btn btn-outline" href="https://github.com/rohan-codz922" target="_blank" rel="noopener">View GitHub ↗</a>
+          <a class="btn btn-outline" href="https://avhaar.in" target="_blank" rel="noopener">Visit avhaar.in ↗</a>
         </div>
       </div>
       <div class="portrait-col">
@@ -350,6 +353,7 @@
         <span class="chip">MongoDB Atlas</span><span class="chip">Redis</span><span class="chip">Firebase FCM</span>
         <span class="chip">Twilio OTP</span><span class="chip">WebSockets</span>
       </div>
+      <a class="case-link" href="https://avhaar.in" target="_blank" rel="noopener">Avhaar company site — avhaar.in ↗</a>
     </div>
 
     <!-- MK GROUP -->
@@ -521,6 +525,10 @@
       <div class="contact-item">
         <span class="label">Phone</span>
         <a class="value" href="tel:+919226448752">+91 92264 48752</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">Website</span>
+        <a class="value" href="https://avhaar.in" target="_blank" rel="noopener">avhaar.in</a>
       </div>
       <div class="contact-item">
         <span class="label">GitHub</span>
